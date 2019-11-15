@@ -37,6 +37,14 @@ def parse_star_parameters(line, star):
 
     l=list(line.split())
     print(l)
+    star.type='star'
+    star.R=int(l[1])
+    star.color=l[2]
+    star.m=int(l[3])
+    star.x=int(l[4])
+    star.y=int(l[5])
+    star.Vx=int(l[6])
+    star.Vy=l[7]
     """Считывает данные о звезде из строки.
     Входная строка должна иметь слеюущий формат:
     Star <радиус в пикселах> <цвет> <масса> <x> <y> <Vx> <Vy>
@@ -54,6 +62,21 @@ def parse_star_parameters(line, star):
     pass  # FIXME: not done yet
 
 def parse_planet_parameters(line, planet):
+
+    l=list(line.split())
+    print(l)
+    planet.type='planet'
+    planet.R=int(l[1])
+    planet.color=l[2]
+    planet.m=int(l[3])
+    planet.x=int(l[4])
+    planet.y=int(l[5])
+    planet.Vx=int(l[6])
+    planet.Vy=l[7]
+
+
+
+
     """Считывает данные о планете из строки.
     Предполагается такая строка:
     Входная строка должна иметь слеюущий формат:
